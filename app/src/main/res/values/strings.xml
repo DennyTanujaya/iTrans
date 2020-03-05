@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">iTrans</string>
+    <string name="customer_prompt">Choose a Customer</string>
+
+    <string-array name="customer_arrays">
+        <item>DTN</item>
+        <item>PT MITRA GLOBAL HOLIDAY</item>
+        <item>PT CIKAL BINTANG BANGSA</item>
+        <item>PT BOSAR JAYA</item>
+        <item>PT CALDERA INDONESIA</item>
+        <item>PERSONAL</item>
+        <item>SINODE GBI</item>
+        <item>GKI OIKUMENE</item>
+    </string-array>
+
+    <string name="armada_prompt">Choose an Armada</string>
+
+    <string-array name="armada_arrays">
+        <item>Big Bus Orange 1525 / Legend ( 59 Seats )</item>
+        <item>Big Bus Orange 1526 / Jetbus 1 ( 59 Seats )</item>
+        <item>Big Bus White 1526 / Jetbus 2 ( 59 Seats )</item>
+        <item>Big Bus Orange 1526 / Legend ( 53 Seats )</item>
+        <item>Big Bus Orange 1526 / Jetbus ( 53 Seats )</item>
+        <item>Big Bus Orange 1526 / Jetbus 2+ ( 50 Seats )</item>
+        <item>Big Bus TUI / FOX ( 47 Seats )</item>
+        <item>Big Bus Orange 1526 / Setra ( 47 Seats ) New</item>
+        <item>Big Bus Orange 1525 / Legend ( 47 Seats )</item>
+        <item>Big Bus Orange 1526 / Jetbus 1 ( 47 seats )</item>
+        <item>Big Bus White Batik 1526 ( 47 Seats ) New</item>
+        <item>Big Bus White 1526 / Jetbus 1 ( 47 Seats )</item>
+        <item>Big Bus TUI / FOX ( 43 Seats )</item>
+        <item>Big Bus Legend ( 43 Seats )</item>
+        <item>Micro Bus Orange ( 35 Seats )</item>
+        <item>Micro Bus Orange ( 31 Seats )</item>
+        <item>Micro Bus Orange ( 29 Seats )</item>
+        <item>Micro Bus Orange ( 26 Seats )</item>
+        <item>Toyota Hi Ace ( 14 Seats )</item>
+        <item>New Innova 2016 ( 6 Seats )</item>
+        <item>Avanza Veloz ( 4 Seats )</item>
+        <item></item>
+    </string-array>
+</resources>

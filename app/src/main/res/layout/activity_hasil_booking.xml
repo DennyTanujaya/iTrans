@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="296dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#F65E2E"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Detail Booking"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/customer"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Customer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+        <TextView
+            android:id="@+id/customerInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/customer"
+            app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+        <TextView
+            android:id="@+id/namatamu"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Nama Tamu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer" />
+
+        <TextView
+            android:id="@+id/namaTamuInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/namatamu"
+            app:layout_constraintTop_toBottomOf="@+id/customerInput" />
+
+        <CheckBox
+            android:id="@+id/internalInput"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:enabled="false"
+            android:text="Internal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namatamu" />
+
+        <CheckBox
+            android:id="@+id/fulldayInput"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:enabled="false"
+            android:text="Fullday"
+            app:layout_constraintStart_toEndOf="@+id/internalInput"
+            app:layout_constraintTop_toBottomOf="@+id/namatamu" />
+
+        <CheckBox
+            android:id="@+id/kePulInput"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:enabled="false"
+            android:text="Ke Pul"
+            app:layout_constraintStart_toEndOf="@+id/fulldayInput"
+            app:layout_constraintTop_toBottomOf="@+id/namatamu" />
+
+        <TextView
+            android:id="@+id/armadaLabel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Armada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fulldayInput" />
+
+        <TextView
+            android:id="@+id/armadaInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/armadaLabel"
+            app:layout_constraintTop_toBottomOf="@+id/fulldayInput" />
+
+        <TextView
+            android:id="@+id/tujuanLabel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Tujuan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armadaLabel" />
+
+        <TextView
+            android:id="@+id/tujuanInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/tujuanLabel"
+            app:layout_constraintTop_toBottomOf="@+id/armadaInput" />
+
+        <TextView
+            android:id="@+id/standbyLabel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Stand By"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tujuanLabel" />
+
+        <TextView
+            android:id="@+id/standbyInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/standbyLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tujuanInput" />
+
+        <TextView
+            android:id="@+id/keteranganLabel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Keterangan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/keteranganInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/keteranganLabel"
+            app:layout_constraintTop_toBottomOf="@+id/dateInput" />
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keteranganLabel" />
+
+        <TextView
+            android:id="@+id/beginInput"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/timeLabel"
+            app:layout_constraintTop_toBottomOf="@+id/keteranganInput" />
+
+        <TextView
+            android:id="@+id/sampai"
+            android:layout_width="10dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintStart_toEndOf="@+id/beginInput"
+            app:layout_constraintTop_toBottomOf="@+id/keteranganInput" />
+
+        <TextView
+            android:id="@+id/endInput"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/sampai"
+            app:layout_constraintTop_toBottomOf="@+id/keteranganInput" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#F65E2E"
+            android:onClick="goHome"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/succeed"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/succeed"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Booking Berhasil"
+            android:textColor="#00FF00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beginInput" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/standbyLabel" />
+
+        <TextView
+            android:id="@+id/dateInput"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/standbyInput" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

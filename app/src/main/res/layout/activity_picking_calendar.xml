@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#F65E2E"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="296dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/customer"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Customer"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/listCustomer"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/customer_arrays"
+        android:prompt="@string/customer_prompt"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/customer"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/namaTamu"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Tamu / Group"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer" />
+
+    <EditText
+        android:id="@+id/tamuTxt"
+        android:layout_width="289dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nama Tamu"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/namaTamu"
+        app:layout_constraintTop_toBottomOf="@+id/listCustomer" />
+
+    <CheckBox
+        android:id="@+id/internalCheck"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:checked="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Internal"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/fulldayCheck"
+        app:layout_constraintTop_toBottomOf="@+id/tamuTxt" />
+
+    <CheckBox
+        android:id="@+id/fulldayCheck"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:checked="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Fullday"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/pulCheck"
+        app:layout_constraintTop_toBottomOf="@+id/tamuTxt" />
+
+    <TextView
+        android:id="@+id/armada"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Armada"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaTamu" />
+
+    <TextView
+        android:id="@+id/tujuan"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Tujuan"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/armada" />
+
+    <EditText
+        android:id="@+id/tujuanTxt"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tempat Tujuan"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/tujuan"
+        app:layout_constraintTop_toBottomOf="@+id/typeBusLabel" />
+
+    <TextView
+        android:id="@+id/standbyLabel"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Stand By"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tujuan" />
+
+    <EditText
+        android:id="@+id/standbyTxt"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tempat Standby"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/standbyLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tujuanTxt" />
+
+    <TextView
+        android:id="@+id/keteranganLabel"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Keterangan"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standbyLabel" />
+
+    <EditText
+        android:id="@+id/keteranganTxt"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Keterangan"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/keteranganLabel"
+        app:layout_constraintTop_toBottomOf="@+id/standbyTxt" />
+
+    <TextView
+        android:id="@+id/beginTimeLabel"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Begin Time"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganLabel" />
+
+    <EditText
+        android:id="@+id/begintimeTxt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/beginTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganTxt" />
+
+    <TextView
+        android:id="@+id/endTimeLabel"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="End Time"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/begintimeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganTxt" />
+
+    <EditText
+        android:id="@+id/endtimeTxt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toEndOf="@+id/endTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganTxt" />
+
+    <CheckBox
+        android:id="@+id/pulCheck"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:checked="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Ke Pul"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tamuTxt" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:background="#F65E2E"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onBooking"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeLabel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/typeBusLabel"
+        android:layout_width="289dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/armada"
+        app:layout_constraintTop_toBottomOf="@+id/fulldayCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
