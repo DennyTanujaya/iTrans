@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             String type = params[0];
-            String login_url = "http://192.168.22.6:81/api.php?";
+            //String login_url = "http://192.168.22.6:81/api.php?";
+            String login_url = "http://182.253.208.123/api.php?";
             if(type.equals("login")) {
                 try {
                     String username = params[1];
@@ -111,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
             //alertDialog.setMessage(result);
             //alertDialog.show();
             if(result != ""){
-                Intent BusActivity = new Intent(getApplicationContext(),
-                        BusActivity.class);
-                MainActivity.this.startActivity(BusActivity);
+                Intent IndexActivity = new Intent(getApplicationContext(),
+                        IndexActivity.class);
+                MainActivity.this.startActivity(IndexActivity);
             }
         }
 

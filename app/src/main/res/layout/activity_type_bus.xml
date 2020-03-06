@@ -33,45 +33,31 @@
         app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btnOpenCalendar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="open calendar"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typebusLabel" />
-
     <Spinner
         android:id="@+id/listArmada"
         android:layout_width="411dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/armada_arrays"
         android:prompt="@string/armada_prompt"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpenCalendar" />
+        app:layout_constraintTop_toBottomOf="@+id/typebusLabel" />
+
 
     <Button
         android:id="@+id/submitArmada"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="80dp"
         android:background="#F65E2E"
         android:onClick="onNextIndex"
         android:text="Next"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listArmada"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toBottomOf="@+id/listArmada" />
 </androidx.constraintlayout.widget.ConstraintLayout>

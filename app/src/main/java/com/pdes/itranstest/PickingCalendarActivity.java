@@ -14,28 +14,29 @@ public class PickingCalendarActivity extends AppCompatActivity{
     Spinner listCustomersBox;
     CheckBox kePul, internal, fullday;
 
+    String startDate, endDate, typeBus;
+
     
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picking_calendar);
-        TextView thedate = (TextView) findViewById(R.id.date);
+        TextView thedatestart = (TextView) findViewById(R.id.startDateLabel);
+        TextView thedateend = (TextView) findViewById(R.id.endDateLabel);
         TextView thearmada = (TextView) findViewById(R.id.typeBusLabel);
+
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        String date = extras.getString("date");
-        String armada = extras.getString("armada");
-        thedate.setText(date);
-        thearmada.setText(armada);
+        startDate = extras.getString("startDate");
+        endDate = extras.getString("endDate");
+        typeBus = extras.getString("typeBus");
+        thedatestart.setText(startDate);
+        thedateend.setText(endDate);
+        thearmada.setText(typeBus);
 
     }
 
     public void onBooking(View view) {
-
-        Intent intent = getIntent();
-        Bundle extrass = intent.getExtras();
-        String dateInput = extrass.getString("date");
-        String armadaInput = extrass.getString("armada");
 
         namaTamu = (EditText)findViewById(R.id.tamuTxt);
         tujuanTamu = (EditText)findViewById(R.id.tujuanTxt);
@@ -85,8 +86,9 @@ public class PickingCalendarActivity extends AppCompatActivity{
         extras.putString("keteranganTamu", keteranganTamuString);
         extras.putString("beginTamu", beginTimeTamuString);
         extras.putString("endTamu", endTimeTamuString);
-        extras.putString("date", dateInput);
-        extras.putString("armada", armadaInput);
+        extras.putString("startDate", startDate);
+        extras.putString("endDate", endDate);
+        extras.putString("typeBus", typeBus);
         //Test
         extras.putString("pul", pulString);
         extras.putString("fullday", fulldayString);

@@ -15,7 +15,7 @@
 
     <string name="armada_prompt">Choose an Armada</string>
 
-    <string-array name="armada_arrays">
+    <string-array name="Big_Bus_armada_arrays">
         <item>Big Bus Orange 1525 / Legend ( 59 Seats )</item>
         <item>Big Bus Orange 1526 / Jetbus 1 ( 59 Seats )</item>
         <item>Big Bus White 1526 / Jetbus 2 ( 59 Seats )</item>
@@ -30,13 +30,27 @@
         <item>Big Bus White 1526 / Jetbus 1 ( 47 Seats )</item>
         <item>Big Bus TUI / FOX ( 43 Seats )</item>
         <item>Big Bus Legend ( 43 Seats )</item>
+    </string-array>
+    <string-array name="Medium_Bus_armada_arrays">
         <item>Micro Bus Orange ( 35 Seats )</item>
         <item>Micro Bus Orange ( 31 Seats )</item>
         <item>Micro Bus Orange ( 29 Seats )</item>
         <item>Micro Bus Orange ( 26 Seats )</item>
+    </string-array>
+    <string-array name="Mini_Van_armada_arrays">
         <item>Toyota Hi Ace ( 14 Seats )</item>
+    </string-array>
+    <string-array name="Car_armada_arrays">
         <item>New Innova 2016 ( 6 Seats )</item>
         <item>Avanza Veloz ( 4 Seats )</item>
         <item></item>
+    </string-array>
+
+    <string name="type_prompt">Choose a Type Bus</string>
+    <string-array name="typeBus_arrays">
+        <item>Big Bus</item>
+        <item>Medium Bus</item>
+        <item>Mini Van</item>
+        <item>Car</item>
     </string-array>
 </resources>

@@ -70,7 +70,7 @@ public class HasilBooking extends AppCompatActivity {
     }
 
     public void goHome(View view) {
-        Intent goToHome = new Intent(HasilBooking.this, BusActivity.class);
+        Intent goToHome = new Intent(HasilBooking.this, IndexActivity.class);
         startActivity(goToHome);
     }
 }
